@@ -7,7 +7,7 @@ const UserModel = mongoose.Schema({
     password: {type: String, required: true},
     token:{type: String}
 })
-
+https://itsastampede615821596.files.wordpress.com/2021/01/how-many-brendan-fraser-mummy-movies-are-there.jpg
 UserModel.pre('save', async function(next){
     const salt = await bcrypt.genSalt();
     this.password = await bcrypt.hash(this.password, salt);
